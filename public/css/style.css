@@ -58,8 +58,10 @@ body {
 }
 .f-info-socials i{
     margin-right:0.5rem;
-    color:#000 !important;
-    font-size:1.5rem;
+    font-size:1.7rem;
+}
+.fa-square-instagram{
+    color: #fe424d;
 }
 .f-info{
     text-align: center;
@@ -138,14 +140,6 @@ body {
     padding-right: 0;
 }
 
-
-/* Map */
-
-#map {
-  height: 400px;
-  width: 80vh;
-  border-radius:10px;
-}
 
 
 /* navbar */
@@ -234,30 +228,46 @@ body {
         background-color: #ede6e6;
     }
 
-    /* ---------- Map ---------- */
-
-@media screen and (max-width: 992px) {
-#map {
-    height: 300px;
-      width: 50vh;
-
-    }
-  }
-@media screen and (max-width: 768px) {
-#map {
-    height: 200px;
-      width: 40vh;
-
-    }
-  }
-@media screen and (max-width: 490px) {
-#map {
-    height: 200px;
-      width: 30vh;
-
-    }
-  }
-
+    #map {
+        width: 100%;
+        height: 450px;
+        border-radius:10px;
+      }
+      
+      @media screen and (max-width: 992px) {
+      #map {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+          }
+        }
+      @media screen and (max-width: 768px) {
+      #map {
+        width: 100%;
+        max-width: 350px;
+        height: 200px;
+      
+          }
+          .card {
+          width: 250px; /* Set the desired width */
+        }
+        }
+      @media screen and (max-width: 490px) {
+      #map {
+          height: 200px;
+            width: 100%;
+            max-width: 300px;
+      
+          }
+        }
+      
+        @media (min-width: 800px) {
+          #map {
+            height: 350px;
+              width: 100%;  /* Set width to 400px for screens 800px and above */
+          max-width: 450px;
+            }
+      }
 
   @media (max-width: 770px) {
     .aminity {
